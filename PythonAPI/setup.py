@@ -9,7 +9,7 @@ ext_modules = [
         'pysobatools._mask',
         sources=['./common/maskApi.c', 'pysobatools/_mask.pyx'],
         include_dirs = [np.get_include(), './common'],
-        #extra_compile_args=['gcc': ['/Qstd=c99']],
+        extra_compile_args={'gcc': ['/Qstd=c99']},
     )
 ]
 
